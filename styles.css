@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 920px;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;   
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 48px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.75;
+    justify-content: space-between;
+}
+
+.top * {
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+}
+
+.sedans, .sedans-button:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedans-button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs, .suvs-button:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs-button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury, .luxury-button:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury-button {
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 14px 30px;
+    box-sizing: border-box;
+    width: fit-content;
+    font-weight: 700;
+}
+
+button:hover {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 85%;
+        height: 85%;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .column {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    button {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .attribution { font-size: 8px; text-align: center; }
+
+}
